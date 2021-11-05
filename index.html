@@ -1,0 +1,149 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Techincal.css">
+	<title>Python</title>
+</head>
+<body>
+	<nav id="navbar">
+		<header id="Python-doc">Python Documentation</header>
+		<div class="items">
+			<a href="#Introduction" class="nav-link">Introduction</a>
+			<a href="#Comments" class="nav-link">Comments</a>
+			<a href="#Variables" class="nav-link">Variables</a>
+			<a href="#Data_Types" class="nav-link">Data Types</a>
+			<a href="#Lists" class="nav-link" id="last">Lists</a>
+		</div>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+
+			<div class="txt">
+				<h3>What can Python do?</h3>
+			 <ul>
+				 <li>Python can be used on a server to create web applications.</li>
+				 <li>Python can be used alongside software to create workflows.</li>
+				 <li>Python can connect to database systems. It can also read and modify files.</li>
+				 <li>Python can be used to handle big data and perform complex mathematics.</li>
+				 <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+				</ul>
+			</div>
+
+			<div class="txt">
+				<h3>Why Python?</h3>
+			 <p>
+			 Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). Moreover, Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick. Also, Python has a simple syntax similar to the English language so it is relatively easy to learn.
+				</p>
+			</div>
+
+			<div class="txt">
+				<h3>Hello World!</h3>
+				<code>print("Hello, World!")</code>
+			</div>
+
+			<div class="txt">
+				<h3>Python Syntax compared to other programming languages</h3>
+				<p>
+				Python was designed for readability, and has some similarities to the English language with influence from
+				mathematics. Furthermore, Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+				</p>
+			</div>
+
+		</section>
+		<section class="main-section" id="Comments">
+			<header>Comments</header>
+
+			<div class="txt">
+				<h3>Creating a Comment</h3>
+				<code>#This is a comment <br> print("Hello, World!")</code>
+			</div>
+
+			<div class="txt">
+				<h3>Multi Line Comments</h3>
+				<p>
+				Python does not really have a syntax for multi line comments. To add a multiline comment you could insert a # for
+				each line:
+				</p>
+				<code>#This is a comment <br> #written in <br> #more than just one line <br> print("Hello, World!")</code>
+				<p>
+				Or, not quite as intended, you can use a multiline string.<br>
+				Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple
+				quotes) in your code, and place your comment inside it:
+				</p>
+				<code>""" <br> This is a comment <br> written in <br> more than just one line <br> """ <br> print("Hello, World!")</code>
+			</div>
+
+		</section>
+		<section class="main-section" id="Variables">
+			<header>Variables</header>
+
+			<div class="txt">
+				<h3>Creating Variables</h3>
+				<p>
+					Variables are containers for storing data values.<br>
+					Unlike other programming languages, Python has no command for declaring a variable.<br>
+					A variable is created the moment you first assign a value to it.
+				</p>
+			</div>
+
+			<div class="txt">
+				<h3>Global Variables</h3>
+				<p>
+				Variables that are created outside of a function (as in all of the examples above) are known as global
+				variables.<br>
+				Global variables can be used by everyone, both inside of functions and outside. If you create a variable with the
+				same name inside a function, this variable will be local, and can only be used inside the function. The global
+				variable with the same name will remain as it was, global and with the original value.
+				</p>
+			</div>
+
+		</section>
+		<section class="main-section" id="Data_Types">
+			<header>Data Types</header>
+
+			<div class="txt">
+				<h3>Built-in Data Types</h3>
+				<p>
+				In programming, data type is an important concept.
+				Variables can store data of different types, and different types can do different things. <br>
+				Python has the following data types built-in by default, in these categories:<br>
+				Text Type: str<br>
+				Numeric Types: int, float, complex<br>
+				Sequence Types: list, tuple, range<br>
+				Mapping Type: dict<br>
+				Set Types: set, frozenset<br>
+				Boolean Type: bool<br>
+				Binary Types: bytes, bytearray, memoryview<br>
+				</p>
+			</div>
+
+			<div class="txt">
+				<h3>Getting the Data Type</h3>
+				<p>You can get the data type of any object by using the type() function:</p>
+				<code>x = 5 <br> print(type(x))</code>
+			</div>
+
+		</section>
+		<section class="main-section" id="Lists">
+			<header>Lists</header>
+
+			<div class="txt">
+				<h3>Python Collections (Arrays)</h3>
+				<p>There are four collection data types in the Python programming language:</p>
+				<ul>
+					<li>List is a collection which is ordered and changeable. Allows duplicate members.</li>
+					<li>Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+					<li>Set is a collection which is unordered and unindexed. No duplicate members.</li>
+					<li>Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+				</ul>
+				<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for
+				a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>

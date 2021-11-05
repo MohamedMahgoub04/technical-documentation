@@ -1,0 +1,124 @@
+/* Montserrat font  */
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Lato&family=Merriweather&family=Montserrat&family=PT+Serif&family=Poppins&family=Raleway&display=swap");
+
+*{
+ font-family: Montserrat;
+ font-size: 15px;
+ margin: 0;
+ padding: 0;
+ box-sizing: 0;
+}
+
+::-webkit-scrollbar{
+ width: 15px;
+}
+::-webkit-scrollbar-track{
+ background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+ background-color: #464646;
+}
+
+#navbar{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 25%;
+ height: 100%;
+ border: 1px solid #464646;
+ overflow: hidden;
+}
+
+#Python-doc{
+ font-size: 27px;
+ padding: 10px;
+ text-align: center;
+ font-family: montserrat;
+}
+
+.items{
+ display: flex;
+ flex-direction: column;
+}
+
+.nav-link{
+ border-top: 1px solid #464646;
+ text-decoration: none;
+ color: #464646;
+ padding: 10px;
+ text-align: center;
+ font-size: 20px;
+ font-family: poppins;
+}
+
+#last{
+ border-bottom: 1px solid #464646;
+}
+
+#main-doc{
+ margin: 0 0 0 25%;
+ background-color: white;
+}
+
+main header{
+ font-size: 30px;
+}
+
+main h3{
+ padding-left: 25px;
+ font-size: 18px;
+ padding-bottom: 5px;
+ font-family: poppins;
+ font-weight: 500;
+}
+
+main p{
+ margin-left: 40px;
+}
+
+main ul{
+ margin-left: 45px;
+}
+
+main code{ 
+ display: block;
+ margin-left: 40px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ padding: 10px 15px;
+ font-family: poppins;
+ background-color: #f7f7f7;
+ color: black;
+ border-radius: 5px;
+ width: 15em;
+ text-align: left;
+ width: 90%;
+}
+
+.main-section{
+ border-bottom: 1px #494a50 solid;
+ padding: 10px 20px;
+}
+
+.main-section header{
+ margin-bottom: 10px;
+ font-family: raleway;
+}
+
+.txt{
+ margin: 20px 0;
+}
+
+/* Media Queries */
+@media all and (max-width: 500px){
+ #navbar{
+  position: unset;
+  width: 100%;
+ }
+ #main-doc{
+  margin: 50px auto;
+ }
+ main code{
+  width: 340px
+ }
+}
